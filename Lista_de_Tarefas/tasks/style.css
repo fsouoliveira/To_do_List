@@ -1,0 +1,89 @@
+/* Define estilos para todos os elementos */
+*{
+    margin: 10; /* Margem universal */
+    padding: 0; /* Preenchimento universal */
+    box-sizing: border-box; /* Box model */
+    font-family: 'Poppins', sans-serif; /* Fonte padrão */
+    outline: none; /* Remove a borda de foco ao clicar */
+}
+
+/* Estilos do corpo da página */
+body{
+    background: url('./img/background.png'); /* Define o plano de fundo com uma imagem */
+}
+
+/* Estilos do container principal */
+.container{
+    background-color: #d1d1d1; /* Cor de fundo */
+    width: 500px; /* Largura */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 20px; /* Preenchimento interno */
+    margin: 100px auto 0; /* Margem */
+}
+
+/* Estilos da entrada de texto para adicionar tarefas */
+.input-task{
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    width: 350px; /* Largura */
+    height: 40px; /* Altura */
+    padding-left: 10px; /* Preenchimento à esquerda */
+}
+
+/* Estilos do botão para adicionar tarefas */
+.button-add-task {
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    height: 40px; /* Altura */
+    background-color: #e1771ac7; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    font-size: 17px; /* Tamanho da fonte */
+    padding: 0 15px; /* Preenchimento interno */
+    float: right; /* Flutua à direita */
+    cursor: pointer; /* Cursor ao passar por cima */
+    font-weight: 700; /* Peso da fonte */
+}
+
+/* Efeito de hover para o botão de adicionar tarefas */
+.button-add-task:hover{
+    opacity: 0.8; /* Opacidade reduzida ao passar por cima */
+}
+
+/* Estilos da lista de tarefas */
+.list-task {
+    width: 100%; /* Largura total */
+    list-style: none; /* Remove a estilização padrão da lista */
+    margin-top: 30px; /* Margem superior */
+}
+
+/* Estilos para cada item da lista de tarefas */
+.task {
+    background-color: #f2f2f2; /* Cor de fundo */
+    box-shadow: 1px 4px 10px rgb(0, 0, 0, 0.2); /* Sombra */
+    height: 50px; /* Altura */
+    display: flex; /* Display flex para alinhamento */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    padding: 0 15px; /* Preenchimento interno */
+    border-radius: 5px; /* Borda arredondada */
+    margin-bottom: 20px; /* Margem inferior */
+    cursor: pointer; /* Cursor ao passar por cima */
+}
+
+/* Estilos para as imagens dentro de cada item da lista de tarefas */
+img {
+    height: 25px; /* Altura */
+    opacity: 0; /* Opacidade inicial */
+    transition: opacity 0.5s ease-in-out; /* Transição de opacidade */
+}
+
+/* Efeito de hover para as imagens dentro de cada item da lista de tarefas */
+.task:hover img {
+    opacity: 1; /* Opacidade ao passar por cima */
+}
+
+/* Estilos para itens da lista de tarefas marcados como concluídos */
+.done {
+    background-color: #8fac55; /* Cor de fundo */
+    text-decoration: line-through; /* Decoração de texto com linha */
+}
